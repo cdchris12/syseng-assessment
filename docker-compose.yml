@@ -60,6 +60,7 @@ services:
     environment:
       << : *default-environment # loads the defined environment variables from the top
       LAGOON_LOCALDEV_URL: nginx-drupal-example.docker.amazee.io # generate another route for nginx, by default we go to varnish
+      NGINX_LISTEN: 8080
     networks:
       - amazeeio-network
       - default
