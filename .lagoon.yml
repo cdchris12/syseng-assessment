@@ -22,8 +22,8 @@ tasks:
         service: cli
         shell: bash
     - run:
-        name: drush scr recreateUserPicture.php
-        command: drush -y cim
+        name: drush scr
+        command: drush scr recreateUserPicture.php
         service: cli
     - run:
         name: drush cim
