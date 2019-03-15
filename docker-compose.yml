@@ -83,7 +83,7 @@ services:
 
 
   mariadb:
-    image: amazeio/mariadb-drupal
+    image: amazeeio/mariadb-drupal
     labels:
       lagoon.type: mariadb
     ports:
