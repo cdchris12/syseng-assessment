@@ -49,4 +49,4 @@ environments:
         service: cli
     routes:
         - varnish:
-            - "drupal-example.amazee.io"
+            - "drupal-example-chris-assessment-engineering.amazee.io"
