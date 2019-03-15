@@ -36,7 +36,7 @@ if(getenv('LAGOON')){
     'port' => 3306,
     'prefix' => '',
   );
-
+} 
 
 ### Lagoon Solr connection
 // WARNING: you have to create a search_api server having "solr" machine name at
