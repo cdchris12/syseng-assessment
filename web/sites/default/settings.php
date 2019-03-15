@@ -26,7 +26,7 @@
  */
 
 ### Lagoon Database connection
-if(getenv('LAG00N')){
+if(getenv('LAGOON')){
   $databases['default']['default'] = array(
     'driver' => 'mysql',
     'database' => getenv('MARIADB_DATABASE') ?: 'drupal',
@@ -136,7 +136,6 @@ if (getenv('LAGOON')) {
 if (file_exists(__DIR__ . '/all.settings.php')) {
   include __DIR__ . '/all.settings.php';
 }
-die("another one?");
 // Services for all environments
 if (file_exists(__DIR__ . '/all.services.yml')) {
   $settings['container_yamls'][] = __DIR__ . '/all.services.yml';

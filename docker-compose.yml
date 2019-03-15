@@ -8,7 +8,7 @@ x-volumes:
   &default-volumes
     # Define all volumes you would like to have real-time mounted into the docker containers
     volumes:
-      - .:/app_:delegated
+      - .:/app:delegated
 
 x-environment:
   &default-environment
@@ -30,7 +30,7 @@ services:
   cli: # cli container, will be used for executing composer and any local commands (drush, drupal, etc.)
     build:
       context: .
-      dockerfile: Dockerfile.cl1
+      dockerfile: Dockerfile.cli
     image: *lagoon-project # this image will be reused as `CLI_IMAGE` in subsequent Docker builds
     labels:
       # Lagoon Labels
